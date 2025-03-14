@@ -314,6 +314,10 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .bottom-8 {
   bottom: 2rem;
 }
@@ -330,17 +334,20 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   top: .5rem;
 }
 
+.top-0 {
+  top: 0;
+}
+
 .z-10 {
   z-index: 10;
 }
 
-.float-right {
-  float: right;
+.z-50 {
+  z-index: 50;
 }
 
-.my-16 {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+.float-right {
+  float: right;
 }
 
 .my-5 {
@@ -462,10 +469,6 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   height: .125rem;
 }
 
-.h-12 {
-  height: 3rem;
-}
-
 .h-2 {
   height: .5rem;
 }
@@ -512,10 +515,6 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 
 .h-auto {
   height: auto;
-}
-
-.h-full {
-  height: 100%;
 }
 
 .h-screen {
@@ -610,16 +609,8 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   max-width: 6rem;
 }
 
-.max-w-2xl {
-  max-width: 42rem;
-}
-
 .max-w-4xl {
   max-width: 56rem;
-}
-
-.max-w-56 {
-  max-width: 14rem;
 }
 
 .max-w-5xl {
@@ -640,14 +631,6 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 
 .max-w-\[200px\] {
   max-width: 200px;
-}
-
-.max-w-\[290px\] {
-  max-width: 290px;
-}
-
-.max-w-\[343px\] {
-  max-width: 343px;
 }
 
 .max-w-lg {
@@ -894,16 +877,6 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   border-radius: .75rem;
 }
 
-.rounded-l-none {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.rounded-r-none {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
 .border {
   border-width: 1px;
 }
@@ -918,10 +891,6 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 
 .border-r {
   border-right-width: 1px;
-}
-
-.border-r-0 {
-  border-right-width: 0;
 }
 
 .border-r-4 {
@@ -1169,10 +1138,6 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   padding-bottom: 1.5rem;
 }
 
-.pb-8 {
-  padding-bottom: 2rem;
-}
-
 .pl-2 {
   padding-left: .5rem;
 }
@@ -1195,10 +1160,6 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 
 .pt-3 {
   padding-top: .75rem;
-}
-
-.pt-8 {
-  padding-top: 2rem;
 }
 
 .text-left {
@@ -1518,10 +1479,6 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
     display: none;
   }
 
-  .md\:h-14 {
-    height: 3.5rem;
-  }
-
   .md\:h-full {
     height: 100%;
   }
@@ -1578,19 +1535,9 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
     padding: 2.5rem;
   }
 
-  .md\:px-0 {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
   .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-  }
-
-  .md\:px-12 {
-    padding-left: 3rem;
-    padding-right: 3rem;
   }
 
   .md\:px-14 {
@@ -1618,18 +1565,9 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
     padding-right: 2rem;
   }
 
-  .md\:py-0 {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
   .md\:py-2\.5 {
     padding-top: .625rem;
     padding-bottom: .625rem;
-  }
-
-  .md\:pl-20 {
-    padding-left: 5rem;
   }
 
   .md\:pl-4 {
@@ -1648,11 +1586,6 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
-  }
-
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .md\:text-\[40px\] {
