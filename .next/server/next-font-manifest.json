@@ -1,19 +1,6 @@
 {
-  "app": {
-    "[project]/app/page": [
-      "static/media/QGYvz_MVcBeNP4NJtEtqUYLknw-s.p.17653016.woff2"
-    ],
-    "[project]/app/seller/page": [
-      "static/media/QGYvz_MVcBeNP4NJtEtqUYLknw-s.p.17653016.woff2"
-    ],
-    "[project]/app/seller/product-list/page": [
-      "static/media/QGYvz_MVcBeNP4NJtEtqUYLknw-s.p.17653016.woff2"
-    ],
-    "[project]/app/seller/orders/page": [
-      "static/media/QGYvz_MVcBeNP4NJtEtqUYLknw-s.p.17653016.woff2"
-    ]
-  },
-  "appUsingSizeAdjust": true,
+  "app": {},
+  "appUsingSizeAdjust": false,
   "pages": {},
   "pagesUsingSizeAdjust": false
 }

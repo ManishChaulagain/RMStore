@@ -4,47 +4,45 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="flex flex-col md:flex-row items-start justify-center px-6 md:px-16 lg:px-32 gap-10 py-14 border-b border-gray-500/30 text-gray-500">
-        <div className="w-4/5">
-          <Image className="w-28 md:w-32" src={assets.logo} alt="logo" />
-          <p className="mt-6 text-sm">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
+    <footer className="bg-white border-t border-gray-200 mt-10 text-gray-600">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+        {/* Logo & Description */}
+        <div>
+          <Image src={assets.logo} alt="Logo" className="w-32 mb-4" />
+          <p className="text-sm leading-relaxed">
+            Your one-stop shop for premium tech gadgets and accessories.
+            Discover deals, quality, and convenience.
           </p>
         </div>
 
-        <div className="w-1/2 flex items-center justify-start md:justify-center">
-          <div>
-            <h2 className="font-medium text-gray-900 mb-5">Company</h2>
-            <ul className="text-sm space-y-2">
-              <li>
-                <a className="hover:underline transition" href="#">Home</a>
-              </li>
-              <li>
-                <a className="hover:underline transition" href="#">About us</a>
-              </li>
-              <li>
-                <a className="hover:underline transition" href="#">Contact us</a>
-              </li>
-              <li>
-                <a className="hover:underline transition" href="#">Privacy policy</a>
-              </li>
-            </ul>
-          </div>
+        {/* Quick Links */}
+        <div>
+          <h4 className="text-base font-semibold mb-4">Quick Links</h4>
+          <ul className="space-y-2 text-sm">
+            <li><a href="#" className="hover:text-orange-600 transition">Home</a></li>
+            <li><a href="#" className="hover:text-orange-600 transition">Shop</a></li>
+            <li><a href="#" className="hover:text-orange-600 transition">Dashboard</a></li>
+            <li><a href="#" className="hover:text-orange-600 transition">About Us</a></li>
+            <li><a href="#" className="hover:text-orange-600 transition">Contact</a></li>
+          </ul>
         </div>
 
-        <div className="w-1/2 flex items-start justify-start md:justify-center">
-          <div>
-            <h2 className="font-medium text-gray-900 mb-5">Get in touch</h2>
-            <div className="text-sm space-y-2">
-              <p>+1-234-567-890</p>
-              <p>contact@greatstack.dev</p>
-            </div>
+        {/* Contact Info */}
+        <div>
+          <h4 className="text-base font-semibold mb-4">Contact Us</h4>
+          <p className="text-sm mb-2">support@yourstore.com</p>
+          <p className="text-sm mb-2">+1 234 567 8901</p>
+          <div className="flex gap-4 mt-4">
+            <a href="#"><Image src={assets.facebook_icon} alt="Facebook" width={20} height={20} /></a>
+            <a href="#"><Image src={assets.twitter_icon} alt="Twitter" width={20} height={20} /></a>
+            <a href="#"><Image src={assets.instagram_icon} alt="Instagram" width={20} height={20} /></a>
           </div>
         </div>
+      </div>
+
+      {/* Copyright */}
+      <div className="text-center text-xs py-4 border-t border-gray-100">
+        &copy; {new Date().getFullYear()} YourStore. All rights reserved.
       </div>
     </footer>
   );
