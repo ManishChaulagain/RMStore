@@ -51,7 +51,7 @@ export const syncUserUpdate = inngest.createFunction(
 );
 
 // Function to delete user from MongoDB
-export const syncUserDelection = inngest.createFunction(
+export const syncUserDeletion = inngest.createFunction(
   { id: "delete-user-from-clerk" },
   { event: "clerk/user.deleted" },
   async ({ event }) => {
@@ -60,7 +60,7 @@ export const syncUserDelection = inngest.createFunction(
       await connectDB();
       await User.findByIdAndDelete(id);
     } catch (error) {
-      console.error("Error in syncUserDelection:", error);
+      console.error("Error in syncUserDeletion:", error);
     }
   }
 );
