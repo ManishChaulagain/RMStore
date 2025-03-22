@@ -1,12 +1,12 @@
 import { serve } from "inngest/next";
 import { inngest, syncUserCreation, syncUserUpdation, syncUserDeletion } from "@/config/inngest";
 
-// Create an API that serves functions
-export const { GET, POST } = serve({
-  client: inngest,
-  functions: [
-    syncUserCreation,
-    syncUserUpdation,
-    syncUserDeletion
-  ],
+// Serve Inngest functions properly
+export default serve({
+    client: inngest,
+    functions: [
+        syncUserCreation,
+        syncUserUpdation,
+        syncUserDeletion
+    ],
 });
