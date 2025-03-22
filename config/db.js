@@ -20,4 +20,3 @@ async function connectDB(){
     return cached
 }
 export default connectDB
-e
