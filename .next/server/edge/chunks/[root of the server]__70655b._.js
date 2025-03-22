@@ -25,13 +25,9 @@ __turbopack_esm__({
     "config": (()=>config),
     "default": (()=>__TURBOPACK__default__export__)
 });
-(()=>{
-    const e = new Error("Cannot find module '@clerk/nextjs/server'");
-    e.code = 'MODULE_NOT_FOUND';
-    throw e;
-})();
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$clerk$2f$nextjs$2f$dist$2f$esm$2f$server$2f$clerkMiddleware$2e$js__$5b$middleware$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@clerk/nextjs/dist/esm/server/clerkMiddleware.js [middleware] (ecmascript)");
 ;
-const __TURBOPACK__default__export__ = clerkMiddleware();
+const __TURBOPACK__default__export__ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$clerk$2f$nextjs$2f$dist$2f$esm$2f$server$2f$clerkMiddleware$2e$js__$5b$middleware$5d$__$28$ecmascript$29$__["clerkMiddleware"])();
 const config = {
     matcher: [
         // Skip Next.js internals and all static files, unless found in search params
